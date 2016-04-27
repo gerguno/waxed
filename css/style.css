@@ -26,6 +26,8 @@ html, body {
 	flex-flow: row wrap;
 	-webkit-align-items: stretch;
 	align-items: stretch;
+	z-index: 2;
+	position: absolute;
 }
 
 .main-tile, .reg-tile {
@@ -51,7 +53,7 @@ h2 {
 
 .background {
 	background: url(https://unsplash.it/1000/800/?random);
-	background-size: 100%;
+	background-size: 110%;
 	background-position: center;
 	height: 100%;
 	width: 100%;
@@ -77,3 +79,53 @@ h2 {
 	align-self: flex-end;
 	position: relative;
 }
+
+.subback {
+	height: calc(100vh + 350px);
+	background: #222;
+	z-index:0;
+}
+
+#subscribe {
+	text-align: center;
+	position:fixed;
+	z-index: 0;
+	color: #fff;
+	left: 0;
+	right: 0;
+	bottom: 164px;
+}
+
+#subscribe input[type="text"] {
+	margin: 0;
+	background: #222;
+	width: 400px;
+	font-size: 1.1em;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: 10px;
+	border: solid 1px #C5C5C5;
+	color: #DFDFDF;
+	-webkit-transition: all 0.18s linear;
+	-moz-transition: all 0.18s linear;
+	-o-transition: all 0.18s linear;
+	transition: all 0.18s linear;	
+}
+
+#subscribe input[type="text"]:focus {
+	outline: none;
+	border: solid 1px #DFDFDF;
+}
+
+#subscribe button {
+	height: 40px;
+	padding: 10px;
+	background: #222;	
+	border: solid 1px #C5C5C5;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	color: #fff;	
+}
+
