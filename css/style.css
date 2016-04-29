@@ -32,6 +32,7 @@ form {
 	align-items: stretch;
 	z-index: 2;
 	position: absolute;
+	overflow: hidden;
 }
 
 .main-tile, .reg-tile {
@@ -84,10 +85,70 @@ h2 {
 	position: relative;
 }
 
+.role {
+	z-index: 1;
+	float: right;
+	text-align: right;
+	align-self: flex-end;
+	margin-bottom: 29px;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	margin-left: auto; 
+}
+
 .subback {
 	height: calc(100vh + 350px);
 	background: #222;
 	z-index:0;
+}
+
+#menu {
+	position: fixed;
+	z-index: 200;
+	right: 38px;
+	top: 20px;
+}
+
+#menu ul {
+	list-style-position: inside;
+}
+
+#menu li {
+	text-align: right;
+	margin-top: 16px;
+	margin-left: 3px;
+}
+
+#menu a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.78em;
+	background: #FF6A7D;
+	border-radius: 3px;
+	padding: 7px 13px;
+	font-weight: 500;
+	-webkit-transition: all 0.18s linear;
+	-moz-transition: all 0.18s linear;
+	-o-transition: all 0.18s linear;
+	transition: all 0.18s linear;	
+}
+
+#menu a:hover {
+	background: #000;
+}
+
+.dropdown-content {
+}
+
+.dropdown-content li {
+	display: inline-block;
+	margin-top: 19px !important;
 }
 
 #subscribe {
@@ -129,7 +190,20 @@ h2 {
 
 #subscribe input[type="text"]:focus {
 	outline: none;
-	border: solid 1px #fff;
+	border: solid 1px #8d8d8d;
+}
+
+#subscribe a {
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	-webkit-transition: all 0.18s linear;
+	-moz-transition: all 0.18s linear;
+	-o-transition: all 0.18s linear;
+	transition: all 0.18s linear;
+}
+
+#subscribe a:hover {
+	color: rgba(255,255,255,0.4);
 }
 
 #subscribe button {
@@ -140,17 +214,18 @@ h2 {
 	box-shadow: none;
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 700;
 	cursor: hand;
 	-webkit-transition: all 0.18s linear;
 	-moz-transition: all 0.18s linear;
 	-o-transition: all 0.18s linear;
-	transition: all 0.18s linear;	
+	transition: all 0.18s linear;
 }
 
 #subscribe button:hover {
 	background: #fff;
-	border: none;
 	color: #000;
 }
+
+
 
