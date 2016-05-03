@@ -72,7 +72,13 @@ h2 {
 	transition: all 0.18s ease-in-out;
 }
 
-.background:hover {
+.main-tile:hover .background {
+	-webkit-filter: brightness(60%);
+	filter: brightness(60%);
+	background-size: 120%;	
+}
+
+.reg-tile:hover .background {
 	-webkit-filter: brightness(60%);
 	filter: brightness(60%);
 	background-size: 120%;
@@ -114,14 +120,15 @@ h2 {
 	top: 20px;
 }
 
-#menu ul {
-	list-style-position: inside;
+#menu ul li {
+	color: rgba(255,255,255,0);
 }
+
 
 #menu li {
 	text-align: right;
 	margin-top: 16px;
-	margin-left: 3px;
+	margin-left: 3px;	
 }
 
 #menu a {
@@ -144,6 +151,11 @@ h2 {
 }
 
 .dropdown-content {
+	display: none;
+	position: absolute;
+	top: 68px;
+	width: 80vw;
+	right: 96px;
 }
 
 .dropdown-content li {
@@ -226,6 +238,3 @@ h2 {
 	background: #fff;
 	color: #000;
 }
-
-
-
