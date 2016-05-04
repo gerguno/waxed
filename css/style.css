@@ -150,6 +150,10 @@ h2 {
 	background: #000;
 }
 
+.counter {
+	font-weight: 300;
+}
+
 .dropdown-content {
 	display: none;
 	position: absolute;
