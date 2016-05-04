@@ -13,4 +13,4 @@ window.onclick = function(event) {
     }
 }
 
-
+$(".gallery-overlay").semiscroll();
