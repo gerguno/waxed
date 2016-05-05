@@ -31,8 +31,8 @@
 }
 
 .on-scroll .gallery-overlay-background {
-	top: 0px;
-	left: 0px;
+	top: 0px !important;
+	left: 0px !important;
 	position: fixed !important;
 }
 

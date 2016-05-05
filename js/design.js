@@ -13,4 +13,11 @@ window.onclick = function(event) {
     }
 }
 
-$(".gallery-overlay").semiscroll();
+window.onload = function() {
+	$(".gallery-overlay").semiscroll();	
+}
+
+$(window).resize(function() {
+	console.log('Semiscroll refreshed');
+	$(".gallery-overlay").semiscroll();	
+});
