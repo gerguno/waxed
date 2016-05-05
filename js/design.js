@@ -1,5 +1,4 @@
-// http://www.w3schools.com/howto/howto_js_dropdown.asp
-
+// HOME DROPDOWN
 $('.dropdown').click(function() {
 	$(this).next().css('top', ($(this).offset().top - 33));
 	$('.dropdown').not(this).next().fadeOut();
@@ -13,11 +12,12 @@ window.onclick = function(event) {
     }
 }
 
+// SEMISCROLL
 window.onload = function() {
-	$(".gallery-overlay").semiscroll();	
+	$(".image-semiscroll").semiscroll();	
 }
 
-$(window).resize(function() {
+window.onresize = function() {
 	console.log('Semiscroll refreshed');
-	$(".gallery-overlay").semiscroll();	
-});
+	$(".image-semiscroll").semiscroll();	
+}
